@@ -16,6 +16,7 @@
 
 <script setup>
 import { ref } from 'vue'
+const status = true
 
 </script>
 
