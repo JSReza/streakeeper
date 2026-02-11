@@ -7,3 +7,7 @@
 
 4. The first two weeks will be dedicated to initializing the Vue.js application with Vite and configuring the lightweight Node.js/Express mock backend. Next, I will focus on implementing the main habit-tracking logic, including the practice logging form and the streak calculator. After that, I will integrate a visual calendar to display the user's progress. Then, I will be refining the UI/UX. The second to last week will be for testing and debugging. 
 
+
+-- talk about analytics from data input by the user and how i will use them 
+-- be more specific on the timeline when it comes to what will be done when in terms of weeks
+--talk about what criteria is being used to calculate the streaks

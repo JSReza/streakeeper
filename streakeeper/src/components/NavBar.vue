@@ -49,6 +49,9 @@ const status = true
     color:#fff;
     text-decoration:none;
 }
+.logo:hover{
+background: #059669;
+}
 .links { 
     list-style:none; 
     display:flex; 
@@ -74,6 +77,10 @@ const status = true
       border-radius:6px; 
       cursor:pointer; 
     }
+.btn.primary:hover{
+    background:#960404f8;
+    color:#fff;
+}
 
 @media (max-width:600px) {
   .links { display:none }
