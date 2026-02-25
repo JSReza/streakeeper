@@ -1,0 +1,38 @@
+
+  [
+  {
+    "id": 1,
+    "habit": "Guitar Practice",
+    "date": "2026-02-25",
+    "length": 30,
+    "details": "Practiced F barre chord transitions"
+  },
+  {
+    "id": 2,
+    "habit": "Guitar Practice",
+    "date": "2026-02-23",
+    "length": 45,
+    "details": "Worked on fingerpicking techniques"
+  },
+  {
+    "id": 3,
+    "habit": "Guitar Practice",
+    "date": "2026-02-21",
+    "length": 30,
+    "details": ""
+  },
+  {
+    "id": 4,
+    "habit": "Reading",
+    "date": "2026-02-24",
+    "length": 45,
+    "details": "Chapter 5 of Clean Code"
+  },
+  {
+    "id": 5,
+    "habit": "Reading",
+    "date": "2026-02-22",
+    "length": 30,
+    "details": "Good progress on the book"
+  }
+]
