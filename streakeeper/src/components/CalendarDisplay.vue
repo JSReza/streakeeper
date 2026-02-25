@@ -15,14 +15,14 @@ import data from '../placeholder-data.json'
 
 const calendarEvents = computed(() => {
   const colorMap = {
-    'Guitar Practice': '#8b5cf6',
-    'Reading': '#10b981'
+    'Guitar Practice': 'blue',
+    'Reading': 'red'
   }
 
   return data.map(entry => ({
-    title: `${entry.habit} (${entry.length}m)`,
+    title: `${entry.habit} (${entry.length}mins)`,
     date: entry.date,
-    backgroundColor: colorMap[entry.habit] || '#6b7280',
+    backgroundColor: colorMap[entry.habit] || 'beige',
     extendedProps: {
       habit: entry.habit,
       duration: entry.length,
