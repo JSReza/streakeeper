@@ -1,0 +1,45 @@
+
+  [
+  {
+    "id": 1,
+    "habit": "Guitar Practice",
+    "date": "2026-03-14",
+    "length": 30,
+    "details": "Played creep"
+  },
+  {
+    "id": 2,
+    "habit": "Guitar Practice",
+    "date": "2026-03-15",
+    "length": 10,
+    "details": "Practiced pentatonic scale"
+  },
+  {
+    "id": 3,
+    "habit": "Guitar Practice",
+    "date": "2026-03-16",
+    "length": 30,
+    "details": "Practiced F barre chord"
+  },
+  {
+    "id": 4,
+    "habit": "Guitar Practice",
+    "date": "2026-03-18",
+    "length": 45,
+    "details": "Played the B barre chord"
+  },
+    {
+    "id": 5,
+    "habit": "Reading",
+    "date": "2026-03-17",
+    "length": 20,
+    "details": "Good progress on the book"
+  },
+  {
+    "id": 6,
+    "habit": "Reading",
+    "date": "2026-03-18",
+    "length": 30,
+    "details": "Good progress on the book"
+  }
+]
