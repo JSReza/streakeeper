@@ -2,20 +2,20 @@ const express = require('express')
 const app = express()
 const port = 3000
 app.use(express.json())
+let habits = []
 
-app.listen(3000, () =>{
+app.listen(port, () =>{
     console.log(`the server works for now`)
 })
 
 
-let habits =[]
-
 app.get('/',(req, res)=>{
+    res.sendStatus(200)
     res.send('express is still working')
 })
-app.get(`/login`,(req,res)=>{
-    res.send(`login page`)
+app.post('/',(req,res)=>{
+    habits.push(req.body)
+    res.json({ message: 'Habit logged!' });
 })
 
-app.post()
 
