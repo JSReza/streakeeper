@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
-    <h3 class="text-lg font-semibold text-slate-800 mb-4">Calendar</h3>
+  <div class="calendar-container">
+    <h3 class="calendar-title">Calendar</h3>
     <FullCalendar :options="calendarOptions" />
   </div>
 </template>
@@ -37,7 +37,7 @@ const calendarOptions = ref({
   headerToolbar: {
     left: 'prev,next today',
     center: 'title',
-    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+    right: 'dayGridMonth,timeGridWeek'
   },
   events: calendarEvents.value,
   eventClick: handleEventClick,
@@ -49,3 +49,19 @@ function handleEventClick(info) {
   alert(`${info.event.title}\nDetails: ${ext.details || 'No additional details'}`)
 }
 </script>
+
+<style scoped>
+.calendar-container {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.calendar-title {
+  margin: 0 0 16px 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+}
+</style>
