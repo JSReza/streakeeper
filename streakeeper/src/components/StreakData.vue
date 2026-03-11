@@ -75,14 +75,14 @@ const longestHabit = computed(() => {
   margin: 0 0 16px 0;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #111827;
+  color: black;
 }
 .longest {
   margin-bottom: 24px;
 }
 .longest-text {
   font-size: 1.125rem;
-  color: #374151;
+  color: black;
 }
 .longest-value {
   color: blue;
@@ -90,7 +90,7 @@ const longestHabit = computed(() => {
 }
 .longest-habit {
   font-size: 0.875rem;
-  color: #6b7280;
+  color: black;
 }
 .streak-list-title {
   font-size: 1rem;
@@ -121,7 +121,7 @@ const longestHabit = computed(() => {
 }
 .streak-total {
   font-size: 0.75rem;
-  color: #6b7280;
+  color: black;
   margin: 0;
 }
 </style>
