@@ -36,12 +36,13 @@ function handleLogin() {
 
 <style scoped>
 .login-card {
-  padding: 16px;
-  background: linear-gradient(90deg, #fff, #f7fafc);
-  border: 1px solid #e6edf3;
+  padding: 24px;
+  background: whitw;
+  border: 1px solid #e5e7eb;
   border-radius: 8px;
-  margin: 12px 0;
-  max-width: 460px;
+  margin: 24px 0;
+  max-width: 480px;
+  box-shadow: 0 4px 12px black;
 }
 
 .form {

@@ -24,11 +24,11 @@
 
 <style scoped>
 .user-input {
-  padding: 16px;
-  background: linear-gradient(90deg, #fff, #f7fafc);
-  border: 1px solid #e6edf3;
+  padding: 24px;
+  background: white;
+  border: 1px solid #e5e7eb;
   border-radius: 8px;
-  margin: 12px 0;
+  margin: 24px 0;
 }
 
 .form {
@@ -64,8 +64,8 @@
 }
 
 .btn.submit {
-  background: #3b82f6;
-  color: #fff;
+  background: blue;
+  color: white;
   border: none;
   padding: 8px 16px;
   border-radius: 6px;

@@ -2,11 +2,7 @@
   <nav class="nav-bar">
     <div class="nav-left">
       <div class="logo" ><a href="#">Streakeeper</a></div>
-      <ul class="links">
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Habits</a></li>
-        <li><a href="#">Stats</a></li>
-      </ul>
+     
     </div>
     <div class="nav-right">
       <button class="btn primary">Log Out</button>
@@ -25,10 +21,12 @@ const status = true
     display:flex; 
     justify-content:space-between; 
     align-items:center; 
-    padding:10px 16px; 
-    background:linear-gradient(90deg,#fff,#f7fafc);
-     border-bottom:1px solid #e6edf3; 
+    padding:12px 24px; 
+    background:#fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-bottom:1px solid #e5e7eb; 
     }
+
 .nav-left { 
     display:flex; 
     align-items:center;
@@ -52,18 +50,7 @@ const status = true
 .logo:hover{
 background: #059669;
 }
-.links { 
-    list-style:none; 
-    display:flex; 
-    gap:10px; 
-    margin:0; 
-    padding:0; 
-}
-.links a { 
-    color:#334155;
-     text-decoration:none;
-      font-size:0.95rem; 
-    }
+
 .nav-right { 
     display:flex; 
     align-items:center;

@@ -23,7 +23,6 @@ const streaks = computed(() => {
   const habitStreaks = {}
   Object.entries(habitMap).forEach(([habit, dates]) => {
     dates.sort((a, b) => b - a) 
-
     let streak = 0
     const today = new Date()
     today.setHours(0, 0, 0, 0)
@@ -64,22 +63,84 @@ const longestHabit = computed(() => {
 })
 </script>
 
+<style scoped>
+.streak-container {
+  background: white;
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.streak-header {
+  margin: 0 0 16px 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+}
+.longest {
+  margin-bottom: 24px;
+}
+.longest-text {
+  font-size: 1.125rem;
+  color: #374151;
+}
+.longest-value {
+  color: blue;
+  font-weight: 600;
+}
+.longest-habit {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+.streak-list-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #374151;
+}
+.streak-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 6px;
+}
+.streak-name {
+  color: #111827;
+  font-weight: 500;
+}
+.streak-stats {
+  text-align: right;
+}
+.streak-current {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: blue;
+  margin: 0;
+}
+.streak-total {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0;
+}
+</style>
 <template>
-  <section class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm">
-    <h1 class="text-2xl font-bold text-slate-800 mb-4">Welcome back, {{ name }}</h1>
+  <section class="streak-container">
+    <h1 class="streak-header">Welcome back, {{ name }}</h1>
     
-    <div v-if="longestHabit" class="mb-6">
-      <h2 class="text-lg font-semibold text-slate-700">Your longest streak: <span class="text-blue-600">{{ longestHabit.streak }} days</span></h2>
-      <p class="text-sm text-slate-600">{{ longestHabit.habit }}</p>
+    <div v-if="longestHabit" class="longest">
+      <h2 class="longest-text">Your longest streak: <span class="longest-value">{{ longestHabit.streak }} days</span></h2>
+      <p class="longest-habit">{{ longestHabit.habit }}</p>
     </div>
 
-    <div v-if="Object.keys(streaks).length > 0" class="space-y-3">
-      <h3 class="font-semibold text-slate-700">All Streaks</h3>
-      <div v-for="(stats, habit) in streaks" :key="habit" class="flex justify-between items-center p-3 bg-slate-50 rounded-md">
-        <span class="text-slate-800">{{ habit }}</span>
-        <div class="text-right">
-          <p class="text-sm font-semibold text-blue-600">{{ stats.current }} day current</p>
-          <p class="text-xs text-slate-600">{{ stats.longest }} days total</p>
+    <div v-if="Object.keys(streaks).length > 0" class="streak-list">
+      <h3 class="streak-list-title">All Streaks</h3>
+      <div v-for="(stats, habit) in streaks" :key="habit" class="streak-item">
+        <span class="streak-name">{{ habit }}</span>
+        <div class="streak-stats">
+          <p class="streak-current">{{ stats.current }} day current</p>
+          <p class="streak-total">{{ stats.longest }} days total</p>
         </div>
       </div>
     </div>
