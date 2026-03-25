@@ -1,7 +1,22 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "username": "jaheenreza",
+      "email": "jaheenreza@example.com",
+      "createdAt": "2026-03-25"
+    },
+    {
+      "id": 2,
+      "username": "demo_user",
+      "email": "demo@example.com",
+      "createdAt": "2026-03-25"
+    }
+  ],
   "habits": [
     {
       "id": 1,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-03-14",
       "length": 30,
@@ -9,6 +24,7 @@
     },
     {
       "id": 2,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-03-15",
       "length": 10,
@@ -16,6 +32,7 @@
     },
     {
       "id": 3,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-03-16",
       "length": 30,
@@ -23,6 +40,7 @@
     },
     {
       "id": 4,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-03-18",
       "length": 45,
@@ -30,6 +48,7 @@
     },
     {
       "id": 5,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-03-17",
       "length": 20,
@@ -37,6 +56,7 @@
     },
     {
       "id": 6,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-03-18",
       "length": 30,
@@ -44,6 +64,7 @@
     },
     {
       "id": 7,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-03-19",
       "length": 45,
@@ -51,6 +72,7 @@
     },
     {
       "id": 8,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-03-19",
       "length": 25,
@@ -58,6 +80,7 @@
     },
     {
       "id": 9,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-03-20",
       "length": 60,
@@ -65,6 +88,7 @@
     },
     {
       "id": 10,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-03-20",
       "length": 35,
@@ -72,6 +96,7 @@
     },
     {
       "id": 11,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-03-21",
       "length": 30,
@@ -79,6 +104,7 @@
     },
     {
       "id": 12,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-03-22",
       "length": 50,
@@ -86,6 +112,7 @@
     },
     {
       "id": 13,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-03-22",
       "length": 40,
@@ -93,6 +120,7 @@
     },
     {
       "id": 14,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-03-23",
       "length": 35,
@@ -100,6 +128,7 @@
     },
     {
       "id": 15,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-03-23",
       "length": 30,
@@ -107,6 +136,7 @@
     },
     {
       "id": 16,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-03-24",
       "length": 45,
@@ -114,6 +144,7 @@
     },
     {
       "id": 17,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-03-25",
       "length": 40,
@@ -121,6 +152,7 @@
     },
     {
       "id": 18,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-03-25",
       "length": 25,
@@ -128,6 +160,7 @@
     },
     {
       "id": 19,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-03-26",
       "length": 55,
@@ -135,6 +168,7 @@
     },
     {
       "id": 20,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-03-26",
       "length": 35,
@@ -142,6 +176,7 @@
     },
     {
       "id": 21,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-03-27",
       "length": 30,
@@ -149,6 +184,7 @@
     },
     {
       "id": 22,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-03-28",
       "length": 50,
@@ -156,6 +192,7 @@
     },
     {
       "id": 23,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-03-28",
       "length": 40,
@@ -163,6 +200,7 @@
     },
     {
       "id": 24,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-03-29",
       "length": 45,
@@ -170,6 +208,7 @@
     },
     {
       "id": 25,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-03-29",
       "length": 30,
@@ -177,6 +216,7 @@
     },
     {
       "id": 26,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-03-30",
       "length": 60,
@@ -184,6 +224,7 @@
     },
     {
       "id": 27,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-03-31",
       "length": 35,
@@ -191,6 +232,7 @@
     },
     {
       "id": 28,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-03-31",
       "length": 45,
@@ -198,6 +240,7 @@
     },
     {
       "id": 29,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-01",
       "length": 40,
@@ -205,6 +248,7 @@
     },
     {
       "id": 30,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-01",
       "length": 35,
@@ -212,6 +256,7 @@
     },
     {
       "id": 31,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-02",
       "length": 50,
@@ -219,6 +264,7 @@
     },
     {
       "id": 32,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-02",
       "length": 30,
@@ -226,6 +272,7 @@
     },
     {
       "id": 33,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-03",
       "length": 45,
@@ -233,6 +280,7 @@
     },
     {
       "id": 34,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-04",
       "length": 55,
@@ -240,6 +288,7 @@
     },
     {
       "id": 35,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-04",
       "length": 40,
@@ -247,6 +296,7 @@
     },
     {
       "id": 36,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-05",
       "length": 30,
@@ -254,6 +304,7 @@
     },
     {
       "id": 37,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-05",
       "length": 25,
@@ -261,6 +312,7 @@
     },
     {
       "id": 38,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-06",
       "length": 60,
@@ -268,6 +320,7 @@
     },
     {
       "id": 39,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-06",
       "length": 45,
@@ -275,6 +328,7 @@
     },
     {
       "id": 40,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-07",
       "length": 40,
@@ -282,6 +336,7 @@
     },
     {
       "id": 41,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-08",
       "length": 50,
@@ -289,6 +344,7 @@
     },
     {
       "id": 42,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-08",
       "length": 35,
@@ -296,6 +352,7 @@
     },
     {
       "id": 43,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-09",
       "length": 45,
@@ -303,6 +360,7 @@
     },
     {
       "id": 44,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-09",
       "length": 30,
@@ -310,6 +368,7 @@
     },
     {
       "id": 45,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-10",
       "length": 55,
@@ -317,6 +376,7 @@
     },
     {
       "id": 46,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-11",
       "length": 35,
@@ -324,6 +384,7 @@
     },
     {
       "id": 47,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-11",
       "length": 40,
@@ -331,6 +392,7 @@
     },
     {
       "id": 48,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-12",
       "length": 50,
@@ -338,6 +400,7 @@
     },
     {
       "id": 49,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-12",
       "length": 35,
@@ -345,6 +408,7 @@
     },
     {
       "id": 50,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-13",
       "length": 45,
@@ -352,6 +416,7 @@
     },
     {
       "id": 51,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-14",
       "length": 60,
@@ -359,6 +424,7 @@
     },
     {
       "id": 52,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-14",
       "length": 45,
@@ -366,6 +432,7 @@
     },
     {
       "id": 53,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-15",
       "length": 40,
@@ -373,6 +440,7 @@
     },
     {
       "id": 54,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-15",
       "length": 30,
@@ -380,6 +448,7 @@
     },
     {
       "id": 55,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-16",
       "length": 50,
@@ -387,6 +456,7 @@
     },
     {
       "id": 56,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-17",
       "length": 45,
@@ -394,6 +464,7 @@
     },
     {
       "id": 57,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-17",
       "length": 35,
@@ -401,6 +472,7 @@
     },
     {
       "id": 58,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-18",
       "length": 55,
@@ -408,6 +480,7 @@
     },
     {
       "id": 59,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-18",
       "length": 40,
@@ -415,6 +488,7 @@
     },
     {
       "id": 60,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-19",
       "length": 35,
@@ -422,6 +496,7 @@
     },
     {
       "id": 61,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-20",
       "length": 50,
@@ -429,6 +504,7 @@
     },
     {
       "id": 62,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-20",
       "length": 45,
@@ -436,6 +512,7 @@
     },
     {
       "id": 63,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-21",
       "length": 45,
@@ -443,6 +520,7 @@
     },
     {
       "id": 64,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-21",
       "length": 30,
@@ -450,6 +528,7 @@
     },
     {
       "id": 65,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-22",
       "length": 60,
@@ -457,6 +536,7 @@
     },
     {
       "id": 66,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-23",
       "length": 40,
@@ -464,6 +544,7 @@
     },
     {
       "id": 67,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-23",
       "length": 35,
@@ -471,6 +552,7 @@
     },
     {
       "id": 68,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-24",
       "length": 50,
@@ -478,6 +560,7 @@
     },
     {
       "id": 69,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-24",
       "length": 40,
@@ -485,6 +568,7 @@
     },
     {
       "id": 70,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-25",
       "length": 45,
@@ -492,6 +576,7 @@
     },
     {
       "id": 71,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-26",
       "length": 55,
@@ -499,6 +584,7 @@
     },
     {
       "id": 72,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-26",
       "length": 35,
@@ -506,6 +592,7 @@
     },
     {
       "id": 73,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-27",
       "length": 40,
@@ -513,6 +600,7 @@
     },
     {
       "id": 74,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-27",
       "length": 30,
@@ -520,6 +608,7 @@
     },
     {
       "id": 75,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-28",
       "length": 50,
@@ -527,6 +616,7 @@
     },
     {
       "id": 76,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-29",
       "length": 45,
@@ -534,6 +624,7 @@
     },
     {
       "id": 77,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-29",
       "length": 45,
@@ -541,6 +632,7 @@
     },
     {
       "id": 78,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-04-30",
       "length": 60,
@@ -548,6 +640,7 @@
     },
     {
       "id": 79,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-04-30",
       "length": 35,
@@ -555,6 +648,7 @@
     },
     {
       "id": 80,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-05-01",
       "length": 40,
@@ -562,6 +656,7 @@
     },
     {
       "id": 81,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-05-01",
       "length": 40,
@@ -569,6 +664,7 @@
     },
     {
       "id": 82,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-05-02",
       "length": 55,
@@ -576,6 +672,7 @@
     },
     {
       "id": 83,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-05-03",
       "length": 45,
@@ -583,6 +680,7 @@
     },
     {
       "id": 84,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-05-03",
       "length": 35,
@@ -590,6 +688,7 @@
     },
     {
       "id": 85,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-05-04",
       "length": 50,
@@ -597,6 +696,7 @@
     },
     {
       "id": 86,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-05-04",
       "length": 40,
@@ -604,6 +704,7 @@
     },
     {
       "id": 87,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-05-05",
       "length": 40,
@@ -611,6 +712,7 @@
     },
     {
       "id": 88,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-05-05",
       "length": 30,
@@ -618,6 +720,7 @@
     },
     {
       "id": 89,
+      "userId": 1,
       "habit": "Guitar Practice",
       "date": "2026-05-06",
       "length": 60,
@@ -625,10 +728,18 @@
     },
     {
       "id": 90,
+      "userId": 1,
       "habit": "Reading",
       "date": "2026-05-06",
       "length": 45,
       "details": "Finished chapter 14 - book nearly complete!"
+    },
+    {
+      "id": 1774447731998,
+      "habit": "Yoga",
+      "date": "2026-03-25",
+      "length": 30,
+      "details": "Morning session"
     }
   ]
 }

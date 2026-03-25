@@ -1,14 +1,24 @@
 <script setup>
-import {ref} from 'vue'
+import { onMounted } from 'vue'
 import NavBar from './components/NavBar.vue';
 import UserInput from './components/UserInput.vue';
 import StreakData from './components/StreakData.vue';
 import CalendarDisplay from './components/CalendarDisplay.vue';
+import UserSelector from './components/UserSelector.vue'
+import { useUser } from './composables/useUser'
+
+const { initializeUser, fetchUsers } = useUser()
+
+onMounted(() => {
+  initializeUser()
+  fetchUsers()
+})
 
 </script>
 <template>
   <div class="app-container">
     <NavBar />
+    <UserSelector />
     <main class="content">
       <StreakData />
       <UserInput />

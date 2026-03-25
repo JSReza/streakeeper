@@ -1,5 +1,6 @@
 <script setup>
 import { defineProps, computed, ref, onMounted } from 'vue'
+import { useUser } from '../composables/useUser'
 
 defineProps({
   name: {
@@ -8,11 +9,13 @@ defineProps({
   }
 })
 
+const { getCurrentUserId } = useUser()
 const habits = ref([])
 
 const fetchHabits = async () => {
   try {
-    const response = await fetch('http://localhost:3000/api/habits')
+    const userId = getCurrentUserId()
+    const response = await fetch(`http://localhost:3000/api/habits?userId=${userId}`)
     if (!response.ok) throw new Error('Failed to fetch habits')
     habits.value = await response.json()
   } catch (error) {

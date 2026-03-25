@@ -19,6 +19,9 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useUser } from '../composables/useUser'
+
+const { getCurrentUserId } = useUser()
 
 const formData = ref({
   habit: '',
@@ -33,6 +36,7 @@ const submitHabit = async () => {
 
   isSubmitting.value = true
   try {
+    const userId = getCurrentUserId()
     const response = await fetch('http://localhost:3000/api/habits', {
       method: 'POST',
       headers: {
@@ -41,7 +45,8 @@ const submitHabit = async () => {
       body: JSON.stringify({
         habit: formData.value.habit,
         length: formData.value.length || 0,
-        details: formData.value.details
+        details: formData.value.details,
+        userId
       })
     })
 
