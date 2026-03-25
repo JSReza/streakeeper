@@ -1,21 +1,18 @@
 const express = require('express')
+const cors = require('cors')
+const usersRouter = require('./routes/users')
+const habitsRouter = require('./routes/habits')
+
 const app = express()
 const port = 3000
+
 app.use(express.json())
-let habits = []
+app.use(cors())
+
+// Mount route handlers
+app.use('/api/users', usersRouter)
+app.use('/api/habits', habitsRouter)
 
 app.listen(port, () =>{
-    console.log(`the server works for now`)
+    console.log(`Server running at http://localhost:${port}`)
 })
-
-
-app.get('/',(req, res)=>{
-    res.sendStatus(200)
-    res.send('express is still working')
-})
-app.post('/',(req,res)=>{
-    habits.push(req.body)
-    res.json({ message: 'Habit logged!' });
-})
-
-
