@@ -1,25 +1,63 @@
 <template>
   <div class="user-input">
-    <form id="main-form" class="form">
-        <label></label>
+    <form @submit.prevent="submitHabit" class="form">
       <div class="form-group">
         <label for="habit">Habit:</label>
-        <input id="habit" type="text" placeholder="Add habit" class="input" />
+        <input id="habit" v-model="formData.habit" type="text" placeholder="Add habit" class="input" required />
  
         <label for="length">Length in minutes:</label>
-        <input id="length" type="number" placeholder="Minutes(optional)" class="input" />
+        <input id="length" v-model.number="formData.length" type="number" placeholder="Minutes (optional)" class="input" />
      
         <label for="details">Extra Details:</label>
-        <textarea id="details" rows="4" placeholder="Extra details(optional)" class="textarea"></textarea>
+        <textarea id="details" v-model="formData.details" rows="4" placeholder="Extra details (optional)" class="textarea"></textarea>
       </div>
 
-      <button type="submit" class="btn submit">Log Progress</button>
+      <button type="submit" class="btn submit" :disabled="isSubmitting">{{ isSubmitting ? 'Logging...' : 'Log Progress' }}</button>
     </form>
   </div>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 
+const formData = ref({
+  habit: '',
+  length: null,
+  details: ''
+})
+
+const isSubmitting = ref(false)
+
+const submitHabit = async () => {
+  if (!formData.value.habit.trim()) return
+
+  isSubmitting.value = true
+  try {
+    const response = await fetch('http://localhost:3000/api/habits', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        habit: formData.value.habit,
+        length: formData.value.length || 0,
+        details: formData.value.details
+      })
+    })
+
+    if (!response.ok) throw new Error('Failed to log habit')
+
+    const result = await response.json()
+    formData.value = { habit: '', length: null, details: '' }
+
+    window.location.reload()
+  } catch (error) {
+    console.error('Error logging habit:', error)
+    alert('Failed to log habit. Please try again.')
+  } finally {
+    isSubmitting.value = false
+  }
+}
 </script>
 
 <style scoped>

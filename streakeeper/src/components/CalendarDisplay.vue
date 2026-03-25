@@ -6,12 +6,32 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import FullCalendar from '@fullcalendar/vue3'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
-import data from '../placeholder-data.json'
+
+const habits = ref([])
+
+const fetchHabits = async () => {
+  try {
+    const response = await fetch('http://localhost:3000/api/habits')
+    if (!response.ok) throw new Error('Failed to fetch habits')
+    habits.value = await response.json()
+  } catch (error) {
+    console.error('Error fetching habits:', error)
+  }
+}
+
+onMounted(() => {
+  fetchHabits()
+})
+
+function handleEventClick(info) {
+  const ext = info.event.extendedProps
+  alert(`${info.event.title}\nDetails: ${ext.details || 'No additional details'}`)
+}
 
 const calendarEvents = computed(() => {
   const colorMap = {
@@ -19,7 +39,7 @@ const calendarEvents = computed(() => {
     'Reading': 'red'
   }
 
-  return data.map(entry => ({
+  return habits.value.map(entry => ({
     title: `${entry.habit} (${entry.length}mins)`,
     date: entry.date,
     backgroundColor: colorMap[entry.habit] || 'beige',
@@ -31,7 +51,7 @@ const calendarEvents = computed(() => {
   }))
 })
 
-const calendarOptions = ref({
+const calendarOptions = computed(() => ({
   plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
   initialView: 'dayGridMonth',
   headerToolbar: {
@@ -42,13 +62,9 @@ const calendarOptions = ref({
   events: calendarEvents.value,
   eventClick: handleEventClick,
   height: 'auto'
-})
-
-function handleEventClick(info) {
-  const ext = info.event.extendedProps
-  alert(`${info.event.title}\nDetails: ${ext.details || 'No additional details'}`)
-}
+}))
 </script>
+
 
 <style scoped>
 .calendar-container {

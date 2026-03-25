@@ -1,6 +1,5 @@
 <script setup>
-import { defineProps, computed } from 'vue'
-import data from '../placeholder-data.json'
+import { defineProps, computed, ref, onMounted } from 'vue'
 
 defineProps({
   name: {
@@ -9,16 +8,31 @@ defineProps({
   }
 })
 
+const habits = ref([])
+
+const fetchHabits = async () => {
+  try {
+    const response = await fetch('http://localhost:3000/api/habits')
+    if (!response.ok) throw new Error('Failed to fetch habits')
+    habits.value = await response.json()
+  } catch (error) {
+    console.error('Error fetching habits:', error)
+  }
+}
+
+onMounted(() => {
+  fetchHabits()
+})
+
 const streaks = computed(() => {
   const habitMap = {}
 
-  data.forEach(entry => {
+  habits.value.forEach(entry => {
     if (!habitMap[entry.habit]) {
       habitMap[entry.habit] = []
     }
     habitMap[entry.habit].push(new Date(entry.date))
   })
-
 
   const habitStreaks = {}
   Object.entries(habitMap).forEach(([habit, dates]) => {

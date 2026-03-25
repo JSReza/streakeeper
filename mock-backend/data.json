@@ -1,0 +1,634 @@
+{
+  "habits": [
+    {
+      "id": 1,
+      "habit": "Guitar Practice",
+      "date": "2026-03-14",
+      "length": 30,
+      "details": "Played creep"
+    },
+    {
+      "id": 2,
+      "habit": "Guitar Practice",
+      "date": "2026-03-15",
+      "length": 10,
+      "details": "Practiced pentatonic scale"
+    },
+    {
+      "id": 3,
+      "habit": "Guitar Practice",
+      "date": "2026-03-16",
+      "length": 30,
+      "details": "Practiced F barre chord"
+    },
+    {
+      "id": 4,
+      "habit": "Guitar Practice",
+      "date": "2026-03-18",
+      "length": 45,
+      "details": "Played the F barre chord"
+    },
+    {
+      "id": 5,
+      "habit": "Reading",
+      "date": "2026-03-17",
+      "length": 20,
+      "details": "Good progress on the book"
+    },
+    {
+      "id": 6,
+      "habit": "Reading",
+      "date": "2026-03-18",
+      "length": 30,
+      "details": "Good progress on the book"
+    },
+    {
+      "id": 7,
+      "habit": "Guitar Practice",
+      "date": "2026-03-19",
+      "length": 45,
+      "details": "Worked on Wonderwall intro"
+    },
+    {
+      "id": 8,
+      "habit": "Reading",
+      "date": "2026-03-19",
+      "length": 25,
+      "details": "Chapter 5 finish"
+    },
+    {
+      "id": 9,
+      "habit": "Guitar Practice",
+      "date": "2026-03-20",
+      "length": 60,
+      "details": "Full song practice - Wonderwall"
+    },
+    {
+      "id": 10,
+      "habit": "Reading",
+      "date": "2026-03-20",
+      "length": 35,
+      "details": "Started chapter 6"
+    },
+    {
+      "id": 11,
+      "habit": "Guitar Practice",
+      "date": "2026-03-21",
+      "length": 30,
+      "details": "Scales and finger exercises"
+    },
+    {
+      "id": 12,
+      "habit": "Guitar Practice",
+      "date": "2026-03-22",
+      "length": 50,
+      "details": "Practiced barre chords for 30 mins, played favorite songs"
+    },
+    {
+      "id": 13,
+      "habit": "Reading",
+      "date": "2026-03-22",
+      "length": 40,
+      "details": "Finished chapter 6, loving the story"
+    },
+    {
+      "id": 14,
+      "habit": "Guitar Practice",
+      "date": "2026-03-23",
+      "length": 35,
+      "details": "Worked on fingerstyle technique"
+    },
+    {
+      "id": 15,
+      "habit": "Reading",
+      "date": "2026-03-23",
+      "length": 30,
+      "details": "Chapter 7 halfway"
+    },
+    {
+      "id": 16,
+      "habit": "Guitar Practice",
+      "date": "2026-03-24",
+      "length": 45,
+      "details": "Practiced Stairway to Heaven riff"
+    },
+    {
+      "id": 17,
+      "habit": "Guitar Practice",
+      "date": "2026-03-25",
+      "length": 40,
+      "details": "Warm up and chord transitions"
+    },
+    {
+      "id": 18,
+      "habit": "Reading",
+      "date": "2026-03-25",
+      "length": 25,
+      "details": "Finished chapter 7"
+    },
+    {
+      "id": 19,
+      "habit": "Guitar Practice",
+      "date": "2026-03-26",
+      "length": 55,
+      "details": "Played full songs, working on tempo"
+    },
+    {
+      "id": 20,
+      "habit": "Reading",
+      "date": "2026-03-26",
+      "length": 35,
+      "details": "Chapter 8 start"
+    },
+    {
+      "id": 21,
+      "habit": "Guitar Practice",
+      "date": "2026-03-27",
+      "length": 30,
+      "details": "Finger exercises and stretching"
+    },
+    {
+      "id": 22,
+      "habit": "Guitar Practice",
+      "date": "2026-03-28",
+      "length": 50,
+      "details": "Learning new song - Yesterday by Beatles"
+    },
+    {
+      "id": 23,
+      "habit": "Reading",
+      "date": "2026-03-28",
+      "length": 40,
+      "details": "Chapter 8 progress, plot twist!"
+    },
+    {
+      "id": 24,
+      "habit": "Guitar Practice",
+      "date": "2026-03-29",
+      "length": 45,
+      "details": "Continued Beatles song practice"
+    },
+    {
+      "id": 25,
+      "habit": "Reading",
+      "date": "2026-03-29",
+      "length": 30,
+      "details": "Chapter 8 conclusion"
+    },
+    {
+      "id": 26,
+      "habit": "Guitar Practice",
+      "date": "2026-03-30",
+      "length": 60,
+      "details": "Long session: scales, songs, and improvisation"
+    },
+    {
+      "id": 27,
+      "habit": "Guitar Practice",
+      "date": "2026-03-31",
+      "length": 35,
+      "details": "Acoustic guitar focus"
+    },
+    {
+      "id": 28,
+      "habit": "Reading",
+      "date": "2026-03-31",
+      "length": 45,
+      "details": "Chapter 9 almost done"
+    },
+    {
+      "id": 29,
+      "habit": "Guitar Practice",
+      "date": "2026-04-01",
+      "length": 40,
+      "details": "Electric guitar - lead techniques"
+    },
+    {
+      "id": 30,
+      "habit": "Reading",
+      "date": "2026-04-01",
+      "length": 35,
+      "details": "Finished chapter 9"
+    },
+    {
+      "id": 31,
+      "habit": "Guitar Practice",
+      "date": "2026-04-02",
+      "length": 50,
+      "details": "Practiced Yesterday - getting better each day"
+    },
+    {
+      "id": 32,
+      "habit": "Reading",
+      "date": "2026-04-02",
+      "length": 30,
+      "details": "Chapter 10 start"
+    },
+    {
+      "id": 33,
+      "habit": "Guitar Practice",
+      "date": "2026-04-03",
+      "length": 45,
+      "details": "Finger picking exercises and songs"
+    },
+    {
+      "id": 34,
+      "habit": "Guitar Practice",
+      "date": "2026-04-04",
+      "length": 55,
+      "details": "Full practice session with warm ups"
+    },
+    {
+      "id": 35,
+      "habit": "Reading",
+      "date": "2026-04-04",
+      "length": 40,
+      "details": "Chapter 10 deep into it"
+    },
+    {
+      "id": 36,
+      "habit": "Guitar Practice",
+      "date": "2026-04-05",
+      "length": 30,
+      "details": "Light session - chord practice"
+    },
+    {
+      "id": 37,
+      "habit": "Reading",
+      "date": "2026-04-05",
+      "length": 25,
+      "details": "Continuing chapter 10"
+    },
+    {
+      "id": 38,
+      "habit": "Guitar Practice",
+      "date": "2026-04-06",
+      "length": 60,
+      "details": "Long session: mastering Yesterday"
+    },
+    {
+      "id": 39,
+      "habit": "Reading",
+      "date": "2026-04-06",
+      "length": 45,
+      "details": "Chapter 10 conclusion"
+    },
+    {
+      "id": 40,
+      "habit": "Guitar Practice",
+      "date": "2026-04-07",
+      "length": 40,
+      "details": "Rhythm and strumming patterns"
+    },
+    {
+      "id": 41,
+      "habit": "Guitar Practice",
+      "date": "2026-04-08",
+      "length": 50,
+      "details": "Started learning Blackbird"
+    },
+    {
+      "id": 42,
+      "habit": "Reading",
+      "date": "2026-04-08",
+      "length": 35,
+      "details": "Chapter 11 start"
+    },
+    {
+      "id": 43,
+      "habit": "Guitar Practice",
+      "date": "2026-04-09",
+      "length": 45,
+      "details": "Blackbird continued - complex fingering"
+    },
+    {
+      "id": 44,
+      "habit": "Reading",
+      "date": "2026-04-09",
+      "length": 30,
+      "details": "Chapter 11 progress"
+    },
+    {
+      "id": 45,
+      "habit": "Guitar Practice",
+      "date": "2026-04-10",
+      "length": 55,
+      "details": "Blackbird practice and other songs"
+    },
+    {
+      "id": 46,
+      "habit": "Guitar Practice",
+      "date": "2026-04-11",
+      "length": 35,
+      "details": "Scales and technique drills"
+    },
+    {
+      "id": 47,
+      "habit": "Reading",
+      "date": "2026-04-11",
+      "length": 40,
+      "details": "Chapter 11 halfway"
+    },
+    {
+      "id": 48,
+      "habit": "Guitar Practice",
+      "date": "2026-04-12",
+      "length": 50,
+      "details": "Song repertoire practice session"
+    },
+    {
+      "id": 49,
+      "habit": "Reading",
+      "date": "2026-04-12",
+      "length": 35,
+      "details": "Almost done with chapter 11"
+    },
+    {
+      "id": 50,
+      "habit": "Guitar Practice",
+      "date": "2026-04-13",
+      "length": 45,
+      "details": "Blackbird - getting very good at it"
+    },
+    {
+      "id": 51,
+      "habit": "Guitar Practice",
+      "date": "2026-04-14",
+      "length": 60,
+      "details": "Full day of practice - all songs"
+    },
+    {
+      "id": 52,
+      "habit": "Reading",
+      "date": "2026-04-14",
+      "length": 45,
+      "details": "Finished chapter 11"
+    },
+    {
+      "id": 53,
+      "habit": "Guitar Practice",
+      "date": "2026-04-15",
+      "length": 40,
+      "details": "Performance prep - polish songs"
+    },
+    {
+      "id": 54,
+      "habit": "Reading",
+      "date": "2026-04-15",
+      "length": 30,
+      "details": "Chapter 12 start"
+    },
+    {
+      "id": 55,
+      "habit": "Guitar Practice",
+      "date": "2026-04-16",
+      "length": 50,
+      "details": "Tempo work and accuracy focus"
+    },
+    {
+      "id": 56,
+      "habit": "Guitar Practice",
+      "date": "2026-04-17",
+      "length": 45,
+      "details": "Learning new technique - tapping"
+    },
+    {
+      "id": 57,
+      "habit": "Reading",
+      "date": "2026-04-17",
+      "length": 35,
+      "details": "Chapter 12 progress"
+    },
+    {
+      "id": 58,
+      "habit": "Guitar Practice",
+      "date": "2026-04-18",
+      "length": 55,
+      "details": "Tapping exercises and applications"
+    },
+    {
+      "id": 59,
+      "habit": "Reading",
+      "date": "2026-04-18",
+      "length": 40,
+      "details": "Chapter 12 continuing"
+    },
+    {
+      "id": 60,
+      "habit": "Guitar Practice",
+      "date": "2026-04-19",
+      "length": 35,
+      "details": "Warm up and coordination drills"
+    },
+    {
+      "id": 61,
+      "habit": "Guitar Practice",
+      "date": "2026-04-20",
+      "length": 50,
+      "details": "All songs review and refinement"
+    },
+    {
+      "id": 62,
+      "habit": "Reading",
+      "date": "2026-04-20",
+      "length": 45,
+      "details": "Chapter 12 ending"
+    },
+    {
+      "id": 63,
+      "habit": "Guitar Practice",
+      "date": "2026-04-21",
+      "length": 45,
+      "details": "Improvisation and freestyle session"
+    },
+    {
+      "id": 64,
+      "habit": "Reading",
+      "date": "2026-04-21",
+      "length": 30,
+      "details": "Chapter 13 start"
+    },
+    {
+      "id": 65,
+      "habit": "Guitar Practice",
+      "date": "2026-04-22",
+      "length": 60,
+      "details": "Marathon session - all techniques"
+    },
+    {
+      "id": 66,
+      "habit": "Guitar Practice",
+      "date": "2026-04-23",
+      "length": 40,
+      "details": "Soloing over backing tracks"
+    },
+    {
+      "id": 67,
+      "habit": "Reading",
+      "date": "2026-04-23",
+      "length": 35,
+      "details": "Chapter 13 progress"
+    },
+    {
+      "id": 68,
+      "habit": "Guitar Practice",
+      "date": "2026-04-24",
+      "length": 50,
+      "details": "Song catalog and smooth transitions"
+    },
+    {
+      "id": 69,
+      "habit": "Reading",
+      "date": "2026-04-24",
+      "length": 40,
+      "details": "Chapter 13 halfway done"
+    },
+    {
+      "id": 70,
+      "habit": "Guitar Practice",
+      "date": "2026-04-25",
+      "length": 45,
+      "details": "Technique refinement - finger strength"
+    },
+    {
+      "id": 71,
+      "habit": "Guitar Practice",
+      "date": "2026-04-26",
+      "length": 55,
+      "details": "Full practice routine with stretching"
+    },
+    {
+      "id": 72,
+      "habit": "Reading",
+      "date": "2026-04-26",
+      "length": 35,
+      "details": "Chapter 13 continuation"
+    },
+    {
+      "id": 73,
+      "habit": "Guitar Practice",
+      "date": "2026-04-27",
+      "length": 40,
+      "details": "Dynamics and expression in playing"
+    },
+    {
+      "id": 74,
+      "habit": "Reading",
+      "date": "2026-04-27",
+      "length": 30,
+      "details": "Near the end of chapter 13"
+    },
+    {
+      "id": 75,
+      "habit": "Guitar Practice",
+      "date": "2026-04-28",
+      "length": 50,
+      "details": "All favorite songs - pure enjoyment"
+    },
+    {
+      "id": 76,
+      "habit": "Guitar Practice",
+      "date": "2026-04-29",
+      "length": 45,
+      "details": "New song learning - Classical piece"
+    },
+    {
+      "id": 77,
+      "habit": "Reading",
+      "date": "2026-04-29",
+      "length": 45,
+      "details": "Finished chapter 13!"
+    },
+    {
+      "id": 78,
+      "habit": "Guitar Practice",
+      "date": "2026-04-30",
+      "length": 60,
+      "details": "Classical piece work and song reviews"
+    },
+    {
+      "id": 79,
+      "habit": "Reading",
+      "date": "2026-04-30",
+      "length": 35,
+      "details": "Chapter 14 start"
+    },
+    {
+      "id": 80,
+      "habit": "Guitar Practice",
+      "date": "2026-05-01",
+      "length": 40,
+      "details": "Classical technique and accuracy"
+    },
+    {
+      "id": 81,
+      "habit": "Reading",
+      "date": "2026-05-01",
+      "length": 40,
+      "details": "Chapter 14 progress"
+    },
+    {
+      "id": 82,
+      "habit": "Guitar Practice",
+      "date": "2026-05-02",
+      "length": 55,
+      "details": "Full repertoire practice session"
+    },
+    {
+      "id": 83,
+      "habit": "Guitar Practice",
+      "date": "2026-05-03",
+      "length": 45,
+      "details": "Classical piece getting smoother"
+    },
+    {
+      "id": 84,
+      "habit": "Reading",
+      "date": "2026-05-03",
+      "length": 35,
+      "details": "Chapter 14 halfway"
+    },
+    {
+      "id": 85,
+      "habit": "Guitar Practice",
+      "date": "2026-05-04",
+      "length": 50,
+      "details": "Performance ready - all polished"
+    },
+    {
+      "id": 86,
+      "habit": "Reading",
+      "date": "2026-05-04",
+      "length": 40,
+      "details": "Chapter 14 near finish"
+    },
+    {
+      "id": 87,
+      "habit": "Guitar Practice",
+      "date": "2026-05-05",
+      "length": 40,
+      "details": "Relaxed playing - just for fun"
+    },
+    {
+      "id": 88,
+      "habit": "Reading",
+      "date": "2026-05-05",
+      "length": 30,
+      "details": "Almost finished chapter 14"
+    },
+    {
+      "id": 89,
+      "habit": "Guitar Practice",
+      "date": "2026-05-06",
+      "length": 60,
+      "details": "Final long session of the month"
+    },
+    {
+      "id": 90,
+      "habit": "Reading",
+      "date": "2026-05-06",
+      "length": 45,
+      "details": "Finished chapter 14 - book nearly complete!"
+    }
+  ]
+}
