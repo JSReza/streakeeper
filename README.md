@@ -8,3 +8,7 @@
 4. The first two weeks will be dedicated to initializing the Vue.js application with Vite and configuring the Node.js/Express mock backend. Next for the next 2 weeks, I will focus on implementing the main habit-tracking logic, including the practice logging form and the streak calculator. For the 2 weeks after that, I will integrate a visual calendar to display the user's progress. Towards the end of the project, I will be refining the UI/UX. TThe last two weeks last week will be for testing and debugging. 
 
 - as of 3/17/25: here's a link to the site: https://jsreza.github.io/streakeeper/
+--input from meeting on 3/25/26
+-make the streaks clearer for next time
+-too general 
+-clearer explanantion necessary for the user input

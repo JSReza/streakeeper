@@ -71,7 +71,8 @@ function closeModal() {
 const calendarEvents = computed(() => {
   const colorMap = {
     'Guitar Practice': 'blue',
-    'Reading': 'red'
+    'Reading': 'red',
+    'Exercise': 'purple'
   }
 
   return habits.value.map(entry => ({

@@ -2,8 +2,8 @@
   "users": [
     {
       "id": 1,
-      "username": "jaheenreza",
-      "email": "jaheenreza@example.com",
+      "username": "jaheen",
+      "email": "jaheen@newpaltz.edu",
       "createdAt": "2026-03-25"
     },
     {
@@ -735,11 +735,11 @@
       "details": "Finished chapter 14 - book nearly complete!"
     },
     {
-      "id": 1774447731998,
-      "habit": "Yoga",
+      "id": 1,
+      "habit": "Exercise",
       "date": "2026-03-25",
-      "length": 30,
-      "details": "Morning session"
+      "length": 45,
+      "details": "went to the gym"
     }
   ]
 }
