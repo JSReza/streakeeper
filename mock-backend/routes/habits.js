@@ -3,16 +3,17 @@ const { readData, writeData } = require('../utils/dataManager')
 
 const router = express.Router()
 
-// GET all habits (optionally filtered by userId)
+// GET habits for a specific user
 router.get('/', (req, res) => {
     try {
         const data = readData()
-        const userId = req.query.userId ? parseInt(req.query.userId) : null
-        
-        let habits = data.habits || []
-        if (userId) {
-            habits = habits.filter(h => h.userId === userId)
+        const userId = req.query.userId ? parseInt(req.query.userId) : undefined
+
+        if (!userId || Number.isNaN(userId)) {
+            return res.status(400).json({ error: 'userId query parameter is required and must be a valid number' })
         }
+
+        const habits = (data.habits || []).filter(h => h.userId === userId)
         res.json(habits)
     } catch (error) {
         res.status(500).json({ error: 'Failed to fetch habits' })
