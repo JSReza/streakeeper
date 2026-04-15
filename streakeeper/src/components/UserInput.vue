@@ -37,6 +37,10 @@ const submitHabit = async () => {
   isSubmitting.value = true
   try {
     const userId = getCurrentUserId()
+    if (!userId) {
+      throw new Error('Please select a user before logging a habit.')
+    }
+
     const response = await fetch('http://localhost:3000/api/habits', {
       method: 'POST',
       headers: {
@@ -50,7 +54,10 @@ const submitHabit = async () => {
       })
     })
 
-    if (!response.ok) throw new Error('Failed to log habit')
+    if (!response.ok) {
+      const errorBody = await response.json().catch(() => null)
+      throw new Error(errorBody?.error || 'Failed to log habit')
+    }
 
     const result = await response.json()
     formData.value = { habit: '', length: null, details: '' }

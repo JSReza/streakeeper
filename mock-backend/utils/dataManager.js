@@ -1,10 +1,18 @@
 const fs = require('fs')
 const path = require('path')
 
-const dataPath = path.join(__dirname, '../data.json')
+const defaultDataPath = path.join(__dirname, '../data.json')
+const dataPath = process.env.DATA_FILE ? path.resolve(process.env.DATA_FILE) : defaultDataPath
 
-// Helper methods for reading and writing data
-function readData(){
+function ensureDataFile() {
+    if (!fs.existsSync(dataPath)) {
+        fs.writeFileSync(dataPath, JSON.stringify({ users: [], habits: [] }, null, 2), 'utf8')
+    }
+}
+
+function readData() {
+    ensureDataFile()
+
     try {
         const data = fs.readFileSync(dataPath, 'utf8')
         return JSON.parse(data)
@@ -14,11 +22,14 @@ function readData(){
     }
 }
 
-function writeData(data){
+function writeData(data) {
+    ensureDataFile()
+
     try {
-        fs.writeFileSync(dataPath, JSON.stringify(data, null, 2))
+        fs.writeFileSync(dataPath, JSON.stringify(data, null, 2), 'utf8')
     } catch (error) {
         console.error('Error writing data:', error)
+        throw error
     }
 }
 

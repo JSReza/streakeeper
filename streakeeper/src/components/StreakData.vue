@@ -15,11 +15,20 @@ const habits = ref([])
 const fetchHabits = async () => {
   try {
     const userId = getCurrentUserId()
+    if (!userId) {
+      habits.value = []
+      return
+    }
+
     const response = await fetch(`http://localhost:3000/api/habits?userId=${userId}`)
-    if (!response.ok) throw new Error('Failed to fetch habits')
+    if (!response.ok) {
+      const errorBody = await response.json().catch(() => null)
+      throw new Error(errorBody?.error || 'Failed to fetch habits')
+    }
     habits.value = await response.json()
   } catch (error) {
     console.error('Error fetching habits:', error)
+    habits.value = []
   }
 }
 

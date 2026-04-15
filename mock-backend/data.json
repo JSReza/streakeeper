@@ -9,8 +9,14 @@
     {
       "id": 2,
       "username": "demo_user",
-      "email": "demo@example.com",
+      "email": "demo@newpaltz.edu",
       "createdAt": "2026-03-25"
+    },
+    {
+      "id": 1776188636920,
+      "username": "John",
+      "email": "",
+      "createdAt": "2026-04-14"
     }
   ],
   "habits": [
