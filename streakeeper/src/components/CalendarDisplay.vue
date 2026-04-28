@@ -25,21 +25,21 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import FullCalendar from '@fullcalendar/vue3'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
 import { useUser } from '../composables/useUser'
 
-const { getCurrentUserId } = useUser()
+const { currentUser, getCurrentUserId } = useUser()
 const habits = ref([])
 const showModal = ref(false)
 const selectedEvent = ref(null)
 
 const fetchHabits = async () => {
   try {
-    const userId = getCurrentUserId()
+    const userId = currentUser.value?.id || getCurrentUserId()
     if (!userId) {
       habits.value = []
       return
@@ -57,8 +57,16 @@ const fetchHabits = async () => {
   }
 }
 
+watch(currentUser, (user) => {
+  if (user?.id) {
+    fetchHabits()
+  }
+}, { immediate: true })
+
 onMounted(() => {
-  fetchHabits()
+  if (currentUser.value?.id) {
+    fetchHabits()
+  }
 })
 
 function handleEventClick(info) {

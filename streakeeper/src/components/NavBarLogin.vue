@@ -1,7 +1,7 @@
 <template>
   <nav class="nav-bar">
     <div class="nav-left">
-      <div class="logo" ><a href="#">Streakeeper</a></div>
+      <div class="logo" @click="refreshPage"><a href="#">Streakeeper</a></div>
   
     </div>
 
@@ -9,9 +9,9 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-const status = true
-
+const refreshPage = () => {
+  window.location.reload()
+}
 </script>
 
 <style scoped>
