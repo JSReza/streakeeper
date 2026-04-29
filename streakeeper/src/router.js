@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import App from './App.vue'
-import LoginPage from './components/LoginPage.vue'
+import DashboardView from './views/DashboardView.vue'
+import LoginPage from './LoginPage.vue'
 
 const routes = [
   {
@@ -11,12 +11,16 @@ const routes = [
   {
     path: '/',
     name: 'Dashboard',
-    component: App
+    component: DashboardView
+  },
+  {
+    path: '/:catchAll(.*)',
+    redirect: '/'
   }
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes
 })
 
