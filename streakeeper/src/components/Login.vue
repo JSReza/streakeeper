@@ -8,21 +8,22 @@
 
       <div class="form-group">
         <label for="password">Password</label>
-        <input id="password" v-model="password" type="password" placeholder="Enter password" class="input" required />
+        <input id="password" v-model="password" type="password" placeholder="Enter password" class="input"/>
       </div>
 
       <div class="form-actions">
-        <label class="remember"><input type="checkbox" v-model="remember" /> Remember me</label>
         <button type="submit" class="btn submit">Login</button>
       </div>
     </form>
 
-    <p class="muted">Login will be implemented soon — this is a placeholder UI.</p>
+    <p class="muted">For the record: This part is just proof of concept. You can enter whatever fake email and password (or just a fake email address with no password) and still "login"</p>
   </div>
 </template>
-
+Login will be implemented soon — this is a placeholder UI.
 <script setup>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+const router = useRouter()
 
 const email = ref('')
 const password = ref('')
@@ -30,7 +31,8 @@ const remember = ref(false)
 
 function handleLogin() {
   console.log('Login attempt', { email: email.value, remember: remember.value })
-  alert('Login functionality coming soon!')
+  router.push('/')
+  
 }
 </script>
 
@@ -84,9 +86,6 @@ function handleLogin() {
   gap: 12px;
 }
 
-.remember {
-     color: #64748b; font-size: 0.9rem; display:flex; align-items:center; gap:8px 
-    }
 
 .btn.submit {
   background: #3b82f6;

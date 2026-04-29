@@ -12,3 +12,8 @@
 -make the streaks clearer for next time
 -too general 
 -clearer explanantion necessary for the user input
+
+- include a date range for the streak data and more data that details how youre doing relative to the year and the month prior.
+- make the streak display bigger 
+- include ytd and mtd on streak data
+

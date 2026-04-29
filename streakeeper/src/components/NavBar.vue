@@ -1,19 +1,27 @@
 <template>
   <nav class="nav-bar">
     <div class="nav-left">
-      <div class="logo" ><a href="#">Streakeeper</a></div>
+      <div class="logo" @click="refreshPage"><a href="#">Streakeeper</a></div>
      
     </div>
     <div class="nav-right">
-      <button class="btn primary">Log Out</button>
+      <button class="btn primary" @click="logout">Log Out</button>
     </div>
   </nav>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-const status = true
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
+
+const refreshPage = () => {
+  window.location.reload()
+}
+
+const logout = () => {
+  router.push('/login')
+}
 </script>
 
 <style scoped>
